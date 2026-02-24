@@ -4,9 +4,11 @@ header img{
 header{
     text-align: center;
     background-color: orange;
-    padding:10px 10px 10px 10px;
-    border-radius: 15px;
+    border-radius: 10px 10px 10px 10px;
+    padding:5px 5px 10px 10px;
     box-shadow: 2px 2px 2px 2px;
+    position: fixed;
+    width: 100%;
 }
 body{
     margin: 0;
@@ -14,6 +16,26 @@ body{
 }
 nav{
     margin-top: 10px;
+}
+.Deskripsihome{
+    width: 40%;
+    font-size: 20px;
+    margin-left: 50px;
+    & h1{
+        color: rgb(197, 143, 73);
+    }
+    & h3 {
+        color: burlywood;
+    }
+    & p{
+        color:antiquewhite;
+    }
+}
+.home{
+    background-image: url(bg1.jpg);
+    height: 800px;
+    background-size: cover;
+    padding-top: 50px;
 }
 nav a{
     text-decoration: none;
@@ -29,4 +51,17 @@ nav a:hover{
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px 5px;
     transition: 0.8s;
+}
+.Deskripsihome a{
+    text-decoration: none;
+    color:aliceblue;
+    background-color: rgb(202, 181, 142);
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 2px 2px rgb(128, 112, 82);
+}
+.Deskripsihome a:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(184, 167, 136);
+    box-shadow: 3px 3px 2px 2px rgb(224, 218, 206);
 }
