@@ -1,29 +1,37 @@
 header img{
     height: 100px;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
+    color: rgb(94, 0, 0);
     text-align: center;
     background-color: rgba(255, 166, 0, 0.486);
     border-radius: 10px 10px 10px 10px;
-    padding:5px 5px 10px 10px;
-    box-shadow: 2px 2px 2px 2px;
+    padding:15px 5px 10px 10px;
+    box-shadow: 2px 2px 2px 2px black;
     position: fixed;
     width: 95%;
     margin-left: 2.5%;
     margin-top: 10px;
     justify-content: space-between;
 }
+
 body{
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 nav{
     margin-top: 10px;
 }
+
 .Deskripsihome{
     width: 40%;
     font-size: 20px;
     margin-left: 50px;
+    padding: 50px 0px 0px 0px;
     & h1{
         color: rgb(197, 143, 73);
     }
@@ -34,27 +42,16 @@ nav{
         color:antiquewhite;
     }
 }
+
 .home{
-    background-image: url(bg1.jpg);
+    background-image: url(home.jpg);
     height: 800px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-top: 50px;
 }
-.about{
-    height: 800px;
-    background-color: antiquewhite;
-}
-.ContainerAbout{
-    background-color: azure;
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-    height: 100%;
-    padding-top: 50px;
-}
-.ContainerAbout img{
-    height: 200px;
-}
+
 nav a{
     text-decoration: none;
     color:maroon ;
@@ -62,7 +59,9 @@ nav a{
     font-size: 16px;
     border-radius: 5px 10px 5px 10px;
     transition: 1s;
+    margin: 10px;
 }
+
 nav a:hover{
     color:rgb(177, 145, 145);
     background-color: antiquewhite;
@@ -70,6 +69,7 @@ nav a:hover{
     box-shadow: 2px 2px 5px 5px;
     transition: 0.8s;
 }
+
 .Deskripsihome a{
     text-decoration: none;
     color:aliceblue;
@@ -78,8 +78,82 @@ nav a:hover{
     border-radius: 30px;
     box-shadow: 3px 3px 2px 2px rgb(128, 112, 82);
 }
+
 .Deskripsihome a:hover{
     color: rgb(255, 255, 255);
     background-color:rgb(184, 167, 136);
     box-shadow: 3px 3px 2px 2px rgb(224, 218, 206);
+}
+
+.about{
+    height: 900px;
+    background-color: antiquewhite;
+}
+.ContainerAbout{
+    background-color: azure;
+    width: 50%;
+    margin-left: 25%;
+    height: 75%;
+    padding: 50px 20px;
+    text-align: justify;
+    &h3{
+        text-align: center;
+    }
+    & .picAbout{
+        margin-left: 25%;
+    }
+    
+}
+.ContainerAbout img{
+    width: 60%;
+    border-radius: 50px 15px 50px 15px;
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.howto{
+    height: 800px;
+    background-color: antiquewhite;
+}
+
+.ContainerHowto{
+    background-color: azure;
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+    height: 75%;
+    padding: 50px 20px;
+}
+.ContainerHowto img{
+    height: 200px;
+    border-radius: 50px 15px 50px 15px;
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.CardProfile{
+    background-color: aliceblue;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+}
+.ImgProfile img{
+    width: 100px;
+    border-radius: 15px 15px 15px 15px;
+}
+.medsos{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+}
+.medsos a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 24px;
+}
+section.profile{
+    background-color: antiquewhite;
 }
