@@ -1,21 +1,46 @@
-header img{
-    height: 100px;
-}
 html{
     scroll-behavior: smooth;
 }
+
+header img{
+    width: 120px;
+    padding: 5px 30px;
+}
 header{
     color: rgb(94, 0, 0);
-    text-align: center;
     background-color: rgba(255, 166, 0, 0.486);
     border-radius: 10px 10px 10px 10px;
-    padding:15px 5px 10px 10px;
+    padding: 0px 15px 0px 15px;
     box-shadow: 2px 2px 2px 2px black;
     position: fixed;
     width: 95%;
     margin-left: 2.5%;
     margin-top: 10px;
     justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+nav{
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color:maroon ;
+    padding: 5px 15px;
+    border-radius: 5px 10px 5px 10px;
+    transition: 1s;
+    margin: 10px;
+    font-size: 17px;
+}
+
+nav a:hover{
+    color:rgb(177, 145, 145);
+    background-color: antiquewhite;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 5px;
+    transition: 0.8s;
 }
 
 body{
@@ -23,17 +48,13 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav{
-    margin-top: 10px;
-}
-
 .Deskripsihome{
     width: 40%;
     font-size: 20px;
     margin-left: 50px;
-    padding: 50px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     & h1{
-        color: rgb(197, 143, 73);
+        color: rgb(95, 67, 24);
     }
     & h3 {
         color: burlywood;
@@ -45,29 +66,11 @@ nav{
 
 .home{
     background-image: url(home.jpg);
-    height: 800px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-top: 50px;
-}
-
-nav a{
-    text-decoration: none;
-    color:maroon ;
-    padding: 5px 15px;
-    font-size: 16px;
-    border-radius: 5px 10px 5px 10px;
-    transition: 1s;
-    margin: 10px;
-}
-
-nav a:hover{
-    color:rgb(177, 145, 145);
-    background-color: antiquewhite;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 2px 2px 5px 5px;
-    transition: 0.8s;
 }
 
 .Deskripsihome a{
@@ -86,18 +89,26 @@ nav a:hover{
 }
 
 .about{
-    height: 900px;
-    background-color: antiquewhite;
+    height: 1100px;
+    padding-top: 150px;
+    background-image: url(background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .ContainerAbout{
     background-color: azure;
+    border-radius: 10px 10px 10px 10px; 
     width: 50%;
     margin-left: 25%;
     height: 75%;
     padding: 50px 20px;
     text-align: justify;
-    &h3{
-        text-align: center;
+    color: rgb(211, 161, 90);
+    font-size: 18px;
+    & h3{
+        text-align: left;
+        color: rgb(146, 104, 48);
+        font-size: 25px;
     }
     & .picAbout{
         margin-left: 25%;
@@ -107,39 +118,106 @@ nav a:hover{
 .ContainerAbout img{
     width: 60%;
     border-radius: 50px 15px 50px 15px;
-    box-shadow: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 15px 0px rgb(197, 139, 63);
 }
+
 
 .howto{
-    height: 800px;
-    background-color: antiquewhite;
+    height: 950px;
+    padding-top: 150px;
+    background-image: url(background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
 .ContainerHowto{
     background-color: azure;
+    border-radius: 10px 10px 0px 0px;
+    width: 50%;
+    padding: 20px;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 25px;
+    & h3{
+        color: rgb(146, 104, 48);
+    }
+}
+.ContainerHowto2{
+    background-color: azure;
+    width: 50%;
+    padding: 50px 20px;
+    margin-left: 25%;
+    text-align: center;
+    color: rgb(211, 161, 90);
+}
+.Alat{
+    text-align: left;
+    margin-left: 18%;
+    text-align: justify;
+    & h3{
+        color: rgb(198, 162, 85);
+        margin-left: 11%;
+    }
+    & ol{
+        color: rgb(227, 191, 113);
+    }
+}
+.Bahan{
+    text-align: left;
+    margin-left: 65%;
+    margin-top: -180px;
+    & h3{
+        color: rgb(198, 162, 85);
+        margin-left: 11%;
+    }
+    & ol{
+        color: rgb(227, 191, 113);
+    }
+}
+.ContainerHowto3{
+    background-color: azure;
+    border-radius: 0px 0px 10px 10px;
     width: 50%;
     margin-left: 25%;
     text-align: left;
-    height: 75%;
-    padding: 50px 20px;
+    padding: 20px;
+    & h3{
+        color: rgb(198, 162, 85);
+    }
+    & ol{
+        color: rgb(227, 191, 113);
+    }
 }
 .ContainerHowto img{
     height: 200px;
     border-radius: 50px 15px 50px 15px;
-    box-shadow: 0px 0px 15px 0px;
+    box-shadow: 0px 0px 15px 0px rgb(197, 139, 63);
 }
 
+.profile{
+    padding-top: 125px;
+    padding-bottom: 140px;
+    background-image: url(background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .CardProfile{
-    background-color: aliceblue;
+    background-color: azure;
     padding: 15px;
-    width: 300px;
+    width: 500px;
+    height: 250px;
     margin: auto;
     text-align: center;
     border-radius: 15px 15px 15px 15px;
 }
+.DeskProfile{
+    color: rgb(128, 198, 191);
+    margin: -150px 150px 0px 0px;
+    font-size: 30px;
+}
 .ImgProfile img{
-    width: 100px;
+    width: 150px;
     border-radius: 15px 15px 15px 15px;
+    margin-left: 70%;
 }
 .medsos{
     left: 0;
@@ -153,7 +231,4 @@ nav a:hover{
     text-decoration: none;
     padding: 10px 10px;
     font-size: 24px;
-}
-section.profile{
-    background-color: antiquewhite;
 }
