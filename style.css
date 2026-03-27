@@ -94,10 +94,12 @@ body{
     background-image: url(background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .ContainerAbout{
     background-color: azure;
-    border-radius: 10px 10px 10px 10px; 
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 8px 8px;
     width: 50%;
     margin-left: 25%;
     height: 75%;
@@ -121,17 +123,18 @@ body{
     box-shadow: 0px 0px 15px 0px rgb(197, 139, 63);
 }
 
-
 .howto{
-    height: 950px;
+    height: 1180px;
     padding-top: 150px;
     background-image: url(background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .ContainerHowto{
     background-color: azure;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 5px rgb(211, 161, 90);
     width: 50%;
     padding: 20px;
     margin-left: 25%;
@@ -143,15 +146,19 @@ body{
 }
 .ContainerHowto2{
     background-color: azure;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 5px rgb(211, 161, 90);
     width: 50%;
     padding: 50px 20px;
-    margin-left: 25%;
+    margin-left: 5%;
+    margin-top: 5%;
     text-align: center;
     color: rgb(211, 161, 90);
+    font-size: 20px;
 }
 .Alat{
     text-align: left;
-    margin-left: 18%;
+    margin-left: 15%;
     text-align: justify;
     & h3{
         color: rgb(198, 162, 85);
@@ -164,7 +171,7 @@ body{
 .Bahan{
     text-align: left;
     margin-left: 65%;
-    margin-top: -180px;
+    margin-top: -230px;
     & h3{
         color: rgb(198, 162, 85);
         margin-left: 11%;
@@ -175,9 +182,11 @@ body{
 }
 .ContainerHowto3{
     background-color: azure;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px 5px rgb(211, 161, 90);
     width: 50%;
-    margin-left: 25%;
+    margin-left: 45%;
+    margin-top: 5%;
     text-align: left;
     padding: 20px;
     & h3{
@@ -199,6 +208,7 @@ body{
     background-image: url(background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .CardProfile{
     background-color: azure;
@@ -208,6 +218,7 @@ body{
     margin: auto;
     text-align: center;
     border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px 5px rgb(128, 198, 191);
 }
 .DeskProfile{
     color: rgb(128, 198, 191);
